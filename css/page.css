@@ -1,0 +1,27 @@
+.page{
+    block-size: 100vh;
+    display: grid;
+    grid-template-columns: 15.25rem 1fr;
+    grid-template-rows: 6rem 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar main";
+}
+
+.page .header {
+    grid-area: header;
+    border: 10px solid red;
+
+}
+
+.page .sidebar{
+    grid-area: sidebar;
+    border: 10px solid green;
+    
+}
+
+.page .calendar{
+    grid-area: main;
+    border: 10px solid gold;
+
+}
