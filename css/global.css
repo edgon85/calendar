@@ -23,16 +23,3 @@
     font: var( --body1-regular);
     margin: 0;
   }
-  
-  h1{
-    color: var(--blue10);
-  }
-  
-  h2{
-    color: var(--red10);
-  }
-  
-  p{
-    color: var(--green10);
-    font: var(--subtitle1);
-  }
