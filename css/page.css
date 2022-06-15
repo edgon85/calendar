@@ -15,8 +15,6 @@
 
 .page .sidebar{
     grid-area: sidebar;
-    border: 10px solid green;
-    
 }
 
 .page .calendar{

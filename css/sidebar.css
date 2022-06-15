@@ -1,0 +1,9 @@
+.sidebar{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding-inline-start: 1.5rem;
+    padding-block-start: 1.5rem;
+}
