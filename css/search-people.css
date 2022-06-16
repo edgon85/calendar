@@ -1,0 +1,22 @@
+.searchPeople{
+    background: var(--gray10);
+    display: flex;
+    align-items: center;
+    padding-inline-start: 1rem;
+    padding-block: 0.75rem;
+    border-radius: .25rem;
+
+}
+
+.searchPeople i {
+    color: var(--gray50);
+}
+
+.inputSearch input {
+    flex: 1;
+    font: var(--body1-regular);
+    padding-inline-start: .5rem;
+    border: none;
+    outline: none;
+    background-color: var(--gray10);
+}

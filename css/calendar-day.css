@@ -56,3 +56,13 @@
     color: var(--white);
 }
 
+
+
+.calendarDay.day {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+ .calendarDay.day::before{
+    block-size: 2.5rem;
+}

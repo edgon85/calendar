@@ -20,3 +20,8 @@
     inset-inline-end: 0;
     inset-inline-end: 0;
 }
+
+
+.timezoneCell.day{
+    z-index: 0;
+}

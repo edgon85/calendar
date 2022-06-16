@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <title>Calendario</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header-primary">
+        <div class="header-logo">
+          <button class="button is-compact">
+            <i class="icon-hamburguerButton"></i>
+          </button>
+          <a href="./index.html" aria-current="page" aria-label="Calendar" tabindex="-1">
+            <img src="./images/logo.png" width="164" height="48" alt="logo de celndario" name="Logo de calendario" />
+          </a>
+        </div>
+
+        <div class="calendarStatus">
+          <button class="button is-secondary">hoy</button>
+          <span class="calendarStatus-navigation">
+            <a class="button is-compact" href="#" aria-label="Semana anterior"><i class="icon-chevronLeft"
+                aria-hidden="true"></i></a>
+            <a class="button is-compact" href="#" aria-label="Siguiente semana"><i class="icon-chevronRight"
+                aria-hidden="true"></i></a>
+          </span>
+          <time class="calendarStatus-date" datetime="14-06-2022">14 de junio</time>
+        </div>
+      </div>
+
+      <div class="header-secondary">
+        <select class="select" name="" id="">
+          <option value="" selected>Semana</option>
+          <option value="">Día</option>
+        </select>
+        <a href="#">
+          <img src="./images/user.jpg" width="32" height="32" alt="user logo">
+        </a>
+      </div>
+
+    </header>
+    <div class="sidebar">
+      <a href="#" class="button is-rounded is-shadowed"><i class="icon-plus"></i> crear</a>
+      <div class="miniCalendar" aria-label="Calendario de navegacion">
+        <div class="miniCalendar-status">
+          <time class="miniCalendar-date" datetime="2022-06">Junio 2022</time>
+          <!-- TODO cambiar las fechas del los time -->
+
+          <div class="miniCalendar-navigation">
+            <a href="#" class="button is-compact" aria-label="Mes anterior">
+              <i class="icon-chevronLeft" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="button is-compact" aria-label="Mes siguiente">
+              <i class="icon-chevronRight" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="miniCalendar-header">
+          <span class="miniCalendar-weekDay">D</span>
+          <span class="miniCalendar-weekDay">L</span>
+          <span class="miniCalendar-weekDay">M</span>
+          <span class="miniCalendar-weekDay">M</span>
+          <span class="miniCalendar-weekDay">J</span>
+          <span class="miniCalendar-weekDay">V</span>
+          <span class="miniCalendar-weekDay">S</span>
+        </div>
+
+        <div class="miniCalendar-month">
+          <div class="miniCalendar-monthDay is-inactive">29</div>
+          <div class="miniCalendar-monthDay is-inactive">30</div>
+          <div class="miniCalendar-monthDay is-inactive">31</div>
+          <div class="miniCalendar-monthDay">1</div>
+          <div class="miniCalendar-monthDay">2</div>
+          <div class="miniCalendar-monthDay">3</div>
+          <div class="miniCalendar-monthDay">4</div>
+          <div class="miniCalendar-monthDay">5</div>
+          <div class="miniCalendar-monthDay">6</div>
+          <div class="miniCalendar-monthDay">7</div>
+          <div class="miniCalendar-monthDay">8</div>
+          <div class="miniCalendar-monthDay">9</div>
+          <div class="miniCalendar-monthDay">10</div>
+          <div class="miniCalendar-monthDay">11</div>
+          <div class="miniCalendar-monthDay">12</div>
+          <div class="miniCalendar-monthDay">13</div>
+          <div class="miniCalendar-monthDay">14</div>
+          <div class="miniCalendar-monthDay">15</div>
+          <div class="miniCalendar-monthDay">16</div>
+          <div class="miniCalendar-monthDay">17</div>
+          <div class="miniCalendar-monthDay is-selected">18</div>
+          <div class="miniCalendar-monthDay">19</div>
+          <div class="miniCalendar-monthDay">20</div>
+          <div class="miniCalendar-monthDay">21</div>
+          <div class="miniCalendar-monthDay">22</div>
+          <div class="miniCalendar-monthDay">23</div>
+          <div class="miniCalendar-monthDay">24</div>
+          <div class="miniCalendar-monthDay">25</div>
+          <div class="miniCalendar-monthDay">26</div>
+          <div class="miniCalendar-monthDay">27</div>
+          <div class="miniCalendar-monthDay">28</div>
+          <div class="miniCalendar-monthDay">29</div>
+          <div class="miniCalendar-monthDay">30</div>
+          <div class="miniCalendar-monthDay is-inactive">1</div>
+          <div class="miniCalendar-monthDay is-inactive">2</div>
+          <div class="miniCalendar-monthDay is-inactive">3</div>
+          <div class="miniCalendar-monthDay is-inactive">4</div>
+          <div class="miniCalendar-monthDay is-inactive">5</div>
+          <div class="miniCalendar-monthDay is-inactive">6</div>
+          <div class="miniCalendar-monthDay is-inactive">7</div>
+          <div class="miniCalendar-monthDay is-inactive">8</div>
+          <div class="miniCalendar-monthDay is-inactive">9</div>
+        </div>
+      </div>
+
+            <div class="searchPeople">
+        <i class="icon-users"></i>
+        <div class="inputSearch">
+          <input type="text" list="search-people" name="buscarp" placeholder="Buscar personas">
+          <datalist id="search-people">
+            <option value="Juan">
+            <option value="Pedro">
+            <option value="Maria">
+            <option value="Jorge">
+            <option value="Mario">
+          </datalist>
+        </div>
+      </div>
+
+      <details open>
+        <summary aria-label="Mis calendarios">Mis calendarios</summary>
+        <ul>
+          <li><i class="icon-checkSquare" aria-hidden="true"></i> Importantes</li>
+          <li><i class="icon-checkSquare" aria-hidden="true"></i> Cumpleaños</li>
+          <li><i class="icon-checkSquare" aria-hidden="true"></i> Tareas</li>
+          <li><i class="icon-check" aria-hidden="true"></i> Recordatorios</li>
+        </ul>
+      </details>
+    </div>
+    <main class="calendar">
+      <div class="calendar-day">
+        <div class="currentTime day"></div>
+        <spnan class="timezoneCell day"></spnan>
+        <h2 class="calendarDay day is-selected" >
+          <a href="#" aria-label="Domingo 06 de junio">
+            <time datetime="13-06-2022">
+              <span class="day">Dom</span> <br />
+              <span class="month">13</span>
+            </time>
+          </a>
+        </h2>
+
+        <spnan class="hourCell">1 AM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">2 AM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">3 AM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">4 AM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">5 AM</spnan>
+        <div class="taskCell">
+          <div tabindex="0" class="task" aria-label="de 17:00 a 18:00, hacer ejercicio">
+            <p>Hacer ejercicio</p>
+            <p>
+              <time datetime="17:00">5</time> -
+              <time datetime="18:00">6 am</time>
+            </p>
+          </div>
+        </div>
+        <spnan class="hourCell">6 AM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">7 AM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">8 AM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">9 AM</spnan>
+        <div class="taskCell">
+          <div tabindex="0" class="task on-time" aria-label="de 17:00 a 18:00, hacer ejercicio">
+            <p>Team Daily</p>
+            <p>
+              <time datetime="9:00">9</time> -
+              <time datetime="10:00">10 am</time>
+            </p>
+          </div>
+        </div>
+        <spnan class="hourCell">10 AM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">11 AM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">12 PM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">1 PM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">2 PM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">3 PM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">4 PM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">5 PM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">6 PM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">7 PM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">8 PM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">9 PM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">10 PM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">11 PM</spnan>
+        <div class="taskCell"></div>
+        <spnan class="hourCell">12 AM</spnan>
+        <div class="taskCell"></div>
+      </div>
+     
+    </main>
+  </div>
+
+  <dialog class="modal">
+    <form class="createTask">
+      <div class="input  is-outstanding">
+        <div class="input-body">
+          <input type="text" name="title" placeholder="Añade un título" required>
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-clock"></i>
+        <div class="input-body">
+          <input type="date" name="date" required>
+          <input type="time" name="time-start" required>
+          <input type="time" name="time-end" required>
+        </div>
+      </div>
+
+      <div class="input">
+        <i class="icon-users"></i>
+        <div class="input-body">
+          <input type="text" list="guests" name="guest" placeholder="Agregar invitados">
+          <datalist id="guests">
+            <option value="Juan">
+            <option value="Pedro">
+            <option value="Maria">
+            <option value="Jorge">
+            <option value="Mario">
+          </datalist>
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-gps"></i>
+        <div class="input-body">
+          <input type="text" name="text" placeholder="Agregar ubicación">
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-text"></i>
+        <div class="input-body">
+          <input type="file" name="text" multiple>
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-text"></i>
+        <div class="input-body">
+          <textarea name="description" placeholder="Agregar descripción" id="" cols="30" rows="2"></textarea>
+        </div>
+      </div>
+    </form>
+    <div class="modal-actions">
+      <button id="close-modal" class="button">Cancelar</button>
+      <button class="button is-primary">Guardar</button>
+    </div>
+  </dialog>
+  <script src="./js/app.js" type="module"></script>
+</body>
+
+</html>

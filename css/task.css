@@ -15,3 +15,7 @@
     margin: 0;
     white-space: nowrap;
 }
+
+.task.on-time{
+  background-color: var(--blue20);
+}

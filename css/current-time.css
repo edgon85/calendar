@@ -17,3 +17,9 @@
     border-radius: 50%;
     transform: translateY(-50%);
 }
+
+.currentTime.day{
+    inline-size: 92%; 
+    inset-block-start: 500px;
+    inset-inline-start: 4.375rem; 
+}

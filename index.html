@@ -130,13 +130,37 @@
           <div class="miniCalendar-monthDay is-inactive">9</div>
         </div>
       </div>
+
+      <div class="searchPeople">
+        <i class="icon-users"></i>
+        <div class="inputSearch">
+          <input type="text" list="search-people" name="buscarp" placeholder="Buscar personas">
+          <datalist id="search-people">
+            <option value="Juan">
+            <option value="Pedro">
+            <option value="Maria">
+            <option value="Jorge">
+            <option value="Mario">
+          </datalist>
+        </div>
+      </div>
+
+      <details open>
+        <summary>Mis calendarios</summary>
+        <ul>
+          <li><i class="icon-checkSquare"></i> Importantes</li>
+          <li><i class="icon-checkSquare"></i> Cumpleaños</li>
+          <li><i class="icon-checkSquare"></i> Tareas</li>
+          <li><i class="icon-check"></i> Recordatorios</li>
+        </ul>
+      </details>
     </div>
     <main class="calendar">
       <div class="currentTime"></div>
       <div class="calendar-week">
         <spnan class="timezoneCell">GTM-5</spnan>
         <h2 class="calendarDay">
-          <a href="#" aria-label="Domingo 06 de junio">
+          <a href="./calendar-by-day.html" aria-label="Domingo 06 de junio">
             <time datetime="13-06-2022">
               <span class="day">Dom</span> <br />
               <span class="month">13</span>
