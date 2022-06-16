@@ -26,13 +26,13 @@
         </div>
 
         <div class="calendarStatus">
-            <button class="button is-secondary">hoy</button>
-            <span class="calendarStatus-navigation">
-              <a class="button is-compact" href="#" aria-label="Semana anterior"><i class="icon-chevronLeft"
+          <button class="button is-secondary">hoy</button>
+          <span class="calendarStatus-navigation">
+            <a class="button is-compact" href="#" aria-label="Semana anterior"><i class="icon-chevronLeft"
                 aria-hidden="true"></i></a>
-                <a class="button is-compact" href="#" aria-label="Siguiente semana"><i class="icon-chevronRight"
-                  aria-hidden="true"></i></a>
-                </span>
+            <a class="button is-compact" href="#" aria-label="Siguiente semana"><i class="icon-chevronRight"
+                aria-hidden="true"></i></a>
+          </span>
           <time class="calendarStatus-date" datetime="14-06-2022">14 de junio</time>
         </div>
       </div>
@@ -62,13 +62,14 @@
       <a href="#" class="button is-rounded is-shadowed"><i class="icon-plus"></i> crear</a>
       <div class="miniCalendar" aria-label="Calendario de navegacion">
         <div class="miniCalendar-status">
-          <time class="miniCalendar-date" datetime="2022-06">Junio 2022</time> <!-- TODO cambiar las fechas del los time -->
-        
+          <time class="miniCalendar-date" datetime="2022-06">Junio 2022</time>
+          <!-- TODO cambiar las fechas del los time -->
+
           <div class="miniCalendar-navigation">
             <a href="#" class="button is-compact" aria-label="Mes anterior">
               <i class="icon-chevronLeft" aria-hidden="true"></i>
             </a>
-            <a href="#" class="button is-compact"  aria-label="Mes siguiente">
+            <a href="#" class="button is-compact" aria-label="Mes siguiente">
               <i class="icon-chevronRight" aria-hidden="true"></i>
             </a>
           </div>
@@ -83,7 +84,7 @@
           <span class="miniCalendar-weekDay">V</span>
           <span class="miniCalendar-weekDay">S</span>
         </div>
-        
+
         <div class="miniCalendar-month">
           <div class="miniCalendar-monthDay is-inactive">29</div>
           <div class="miniCalendar-monthDay is-inactive">30</div>
@@ -411,6 +412,64 @@
       </div>
     </main>
   </div>
+
+  <dialog class="modal">
+    <form class="createTask">
+      <div class="input  is-outstanding">
+        <div class="input-body">
+          <input type="text" name="title" placeholder="Añade un título" required>
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-clock"></i>
+        <div class="input-body">
+          <input type="date" name="date" required>
+          <input type="time" name="time-start" required>
+          <input type="time" name="time-end" required>
+        </div>
+      </div>
+
+      <div class="input">
+        <i class="icon-users"></i>
+        <div class="input-body">
+          <input type="text" list="guests" name="guest" placeholder="Agregar invitados">
+          <datalist id="guests">
+            <option value="Juan">
+            <option value="Pedro">
+            <option value="Maria">
+            <option value="Jorge">
+            <option value="Mario">
+          </datalist>
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-gps"></i>
+        <div class="input-body">
+          <input type="text" name="text" placeholder="Agregar ubicación">
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-text"></i>
+        <div class="input-body">
+          <input type="file" name="text" multiple>
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-text"></i>
+        <div class="input-body">
+          <textarea name="description" placeholder="Agregar descripción" id="" cols="30" rows="2"></textarea>
+        </div>
+      </div>
+    </form>
+    <div class="modal-actions">
+      <button class="button">Cancelar</button>
+      <button class="button is-primary">Guardar</button>
+    </div>
+  </dialog>
+  <script>
+    const modal = document.querySelector('.modal');
+    modal.showModal();
+  </script>
 </body>
 
 </html>
