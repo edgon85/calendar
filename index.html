@@ -250,7 +250,8 @@
         <div class="taskCell"></div>
         <div class="taskCell"></div>
         <spnan class="hourCell">4AM</spnan>
-        <div class="taskCell is-active"></div>
+        <!-- <div class="taskCell is-active"></div> -->
+        <div class="taskCell"></div>
         <div class="taskCell"></div>
         <div class="taskCell"></div>
         <div class="taskCell"></div>
@@ -462,14 +463,11 @@
       </div>
     </form>
     <div class="modal-actions">
-      <button class="button">Cancelar</button>
+      <button id="close-modal" class="button">Cancelar</button>
       <button class="button is-primary">Guardar</button>
     </div>
   </dialog>
-  <script>
-    const modal = document.querySelector('.modal');
-    modal.showModal();
-  </script>
+  <script src="./js/app.js" type="module"></script>
 </body>
 
 </html>
